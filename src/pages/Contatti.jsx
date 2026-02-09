@@ -35,13 +35,13 @@ export default function Contatti() {
     const ctx = gsap.context(() => {
       gsap.fromTo('.hero-title-cont',
         { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1.2, stagger: 0.1, ease: 'power4.out', delay: 0.2 }
+        { y: 0, opacity: 1, duration: 0.6, stagger: 0.05, ease: 'power4.out', delay: 0.1 }
       )
 
       gsap.fromTo('.form-field',
         { y: 40, opacity: 0 },
         {
-          y: 0, opacity: 1, duration: 0.6, stagger: 0.08, ease: 'power3.out',
+          y: 0, opacity: 1, duration: 0.3, stagger: 0.04, ease: 'power3.out',
           scrollTrigger: { trigger: formRef.current, start: 'top 75%' }
         }
       )
@@ -49,7 +49,7 @@ export default function Contatti() {
       gsap.fromTo('.info-block',
         { x: 60, opacity: 0 },
         {
-          x: 0, opacity: 1, duration: 0.8, stagger: 0.1, ease: 'power3.out',
+          x: 0, opacity: 1, duration: 0.4, stagger: 0.05, ease: 'power3.out',
           scrollTrigger: { trigger: infoRef.current, start: 'top 75%' }
         }
       )

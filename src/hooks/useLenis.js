@@ -17,7 +17,7 @@ export function useLenis() {
     }
 
     lenis.current = new Lenis({
-      duration: 1.2,
+      duration: 0.8,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: 'vertical',
       gestureOrientation: 'vertical',
@@ -49,7 +49,7 @@ export function scrollTo(target, options = {}) {
   if (lenisInstance) {
     lenisInstance.scrollTo(target, {
       offset: 0,
-      duration: 1.5,
+      duration: 0.8,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       ...options,
     })

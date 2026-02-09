@@ -19,19 +19,19 @@ export default function ChiSiamo() {
       // Hero
       gsap.fromTo('.hero-title',
         { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1.2, stagger: 0.1, ease: 'power4.out', delay: 0.2 }
+        { y: 0, opacity: 1, duration: 0.6, stagger: 0.05, ease: 'power4.out', delay: 0.1 }
       )
 
       gsap.fromTo('.hero-bg-chi',
         { scale: 1.2 },
-        { scale: 1, duration: 2, ease: 'power2.out' }
+        { scale: 1, duration: 1, ease: 'power2.out' }
       )
 
       // Story - horizontal reveal
       gsap.fromTo('.story-text',
         { x: -100, opacity: 0 },
         {
-          x: 0, opacity: 1, duration: 1.2, ease: 'power3.out',
+          x: 0, opacity: 1, duration: 0.6, ease: 'power3.out',
           scrollTrigger: { trigger: storyRef.current, start: 'top 65%' }
         }
       )
@@ -39,7 +39,7 @@ export default function ChiSiamo() {
       gsap.fromTo('.story-img-1',
         { scale: 1.3, opacity: 0 },
         {
-          scale: 1, opacity: 1, duration: 1.5, ease: 'power3.out',
+          scale: 1, opacity: 1, duration: 0.7, ease: 'power3.out',
           scrollTrigger: { trigger: storyRef.current, start: 'top 60%' }
         }
       )
@@ -47,7 +47,7 @@ export default function ChiSiamo() {
       gsap.fromTo('.story-img-2',
         { y: 100, opacity: 0 },
         {
-          y: 0, opacity: 1, duration: 1.2, ease: 'power3.out',
+          y: 0, opacity: 1, duration: 0.6, ease: 'power3.out',
           scrollTrigger: { trigger: storyRef.current, start: 'top 50%' }
         }
       )
@@ -56,7 +56,7 @@ export default function ChiSiamo() {
       gsap.fromTo('.timeline-item',
         { y: 60, opacity: 0 },
         {
-          y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: 'power3.out',
+          y: 0, opacity: 1, duration: 0.4, stagger: 0.1, ease: 'power3.out',
           scrollTrigger: { trigger: '.timeline-section', start: 'top 70%' }
         }
       )
@@ -65,7 +65,7 @@ export default function ChiSiamo() {
       gsap.fromTo('.value-item',
         { y: 80, opacity: 0 },
         {
-          y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: 'power3.out',
+          y: 0, opacity: 1, duration: 0.4, stagger: 0.08, ease: 'power3.out',
           scrollTrigger: { trigger: valuesRef.current, start: 'top 70%' }
         }
       )

@@ -48,7 +48,7 @@ export function useReveal(options = {}) {
     const {
       y = 80,
       opacity = 0,
-      duration = 1.2,
+      duration = 0.6,
       delay = 0,
       start = 'top 85%',
       ease = customEase.outExpo,
@@ -87,8 +87,8 @@ export function useStaggerReveal(options = {}) {
       selector = '.stagger-item',
       y = 60,
       opacity = 0,
-      duration = 0.9,
-      stagger = 0.15,
+      duration = 0.45,
+      stagger = 0.08,
       start = 'top 80%',
       ease = customEase.outExpo,
     } = options
@@ -165,8 +165,8 @@ export function useSplitText(options = {}) {
       type = 'chars',
       y = 100,
       rotation = 0,
-      duration = 0.8,
-      stagger = 0.02,
+      duration = 0.4,
+      stagger = 0.01,
       start = 'top 85%',
       ease = customEase.outExpo,
     } = options
@@ -240,7 +240,7 @@ export function useImageReveal(options = {}) {
     if (!container || !image) return
 
     const {
-      duration = 1.4,
+      duration = 0.7,
       delay = 0,
       start = 'top 80%',
       direction = 'left',
@@ -300,7 +300,7 @@ export function useMagnetic(strength = 0.3) {
       gsap.to(el, {
         x: x * strength,
         y: y * strength,
-        duration: 0.4,
+        duration: 0.2,
         ease: 'power2.out',
       })
     }
@@ -309,7 +309,7 @@ export function useMagnetic(strength = 0.3) {
       gsap.to(el, {
         x: 0,
         y: 0,
-        duration: 0.7,
+        duration: 0.35,
         ease: 'elastic.out(1, 0.3)',
       })
     }

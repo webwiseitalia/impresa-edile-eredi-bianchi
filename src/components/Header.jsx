@@ -35,7 +35,7 @@ export default function Header() {
       if (items) {
         gsap.fromTo(items,
           { y: 80, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.8, stagger: 0.1, ease: 'power4.out', delay: 0.3 }
+          { y: 0, opacity: 1, duration: 0.4, stagger: 0.05, ease: 'power4.out', delay: 0.15 }
         )
       }
     } else {

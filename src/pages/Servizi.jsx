@@ -80,19 +80,19 @@ export default function Servizi() {
       // Hero
       gsap.fromTo('.hero-title-serv',
         { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1.2, stagger: 0.1, ease: 'power4.out', delay: 0.2 }
+        { y: 0, opacity: 1, duration: 0.6, stagger: 0.05, ease: 'power4.out', delay: 0.1 }
       )
 
       gsap.fromTo('.hero-bg-serv',
         { scale: 1.2 },
-        { scale: 1, duration: 2, ease: 'power2.out' }
+        { scale: 1, duration: 1, ease: 'power2.out' }
       )
 
       // Services
       gsap.fromTo('.service-block',
         { y: 80, opacity: 0 },
         {
-          y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: 'power3.out',
+          y: 0, opacity: 1, duration: 0.4, stagger: 0.08, ease: 'power3.out',
           scrollTrigger: { trigger: servicesRef.current, start: 'top 70%' }
         }
       )
@@ -101,7 +101,7 @@ export default function Servizi() {
       gsap.fromTo('.process-step',
         { y: 40, opacity: 0 },
         {
-          y: 0, opacity: 1, duration: 0.6, stagger: 0.1, ease: 'power3.out',
+          y: 0, opacity: 1, duration: 0.3, stagger: 0.05, ease: 'power3.out',
           scrollTrigger: { trigger: processRef.current, start: 'top 75%' }
         }
       )
